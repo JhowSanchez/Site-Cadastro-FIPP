@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="iso-8859-1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/fipp-logo.png" />
+  <link rel="stylesheet" href="/css/banda1.css" type="text/css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-brand">
+      Fipp Music Festival
+    </div>
+    <div class="navbar-buttons">
+      <a onclick="goBack()" id="comprar-ingressos">Home</a>
+    </div>
+  </div>
+  <video poster="/img/e49e6064d0c8bfcac711139b05354bfd.jpg" id="bgvid" playsinline autoplay loop preload="auto">
+    <source src="/videos/Three Days Grace - I Hate Everything About You (Official Video)(480P).mp4" type="video/mp4">
+    <source src="/videos/Three Days Grace - I Hate Everything About You (Official Video)(480P).mp4" type="video/mp4">
+  </video>
+  <div id="polina">
+    <h1>Three Days Grace</h1>
+    <p>Genero : Rock 
+    <p>Data 27/03/2023 - Palacio dos Esportes</a>
+    <p>Three Days Grace é uma banda canadense de rock alternativo formada em 1997 na cidade de Toronto. A banda é
+      composta por Adam Gontier (vocal e guitarra), Brad Walst (baixo e vocal de apoio), Barry Stock (guitarra) e Neil
+      Sanderson (bateria e vocal de apoio).
+      </p>
+    <p>O estilo musical da banda é influenciado pelo grunge e pelo rock alternativo dos anos 90, com letras que abordam
+      temas como amor, perda, dor e superação. Algumas de suas canções mais populares incluem "I Hate Everything About
+      You", "Animal I Have Become", "Pain", "Never Too Late" e "Riot".</p>
+    <button>Pause</button>
+  </div>
+</body>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+  var vid = document.getElementById("bgvid");
+  var pauseButton = document.querySelector("#polina button");
+
+  if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+
+  function vidFade() {
+    vid.classList.add("stopfade");
+  }
+
+  vid.addEventListener('ended', function () {
+    // only functional if "loop" is removed 
+    vid.pause();
+    // to capture IE10
+    vidFade();
+  });
+
+
+  pauseButton.addEventListener("click", function () {
+    vid.classList.toggle("stopfade");
+    if (vid.paused) {
+      vid.play();
+      pauseButton.innerHTML = "Pause";
+    } else {
+      vid.pause();
+      pauseButton.innerHTML = "Paused";
+    }
+  })
+
+
+</script>
+
+</html>

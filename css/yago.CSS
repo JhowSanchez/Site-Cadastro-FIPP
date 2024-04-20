@@ -1,0 +1,615 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#img-logo{
+ height: 50px;
+
+width: 50px;
+}
+
+
+.header{
+    width: calc(100% - 17px);
+    height: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 30px ;
+    position: fixed;
+    box-sizing: border-box;
+    clear: both;
+    flex: 4 ;
+}
+
+.header a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header-left,.header-right {
+   flex: 4;
+    display: flex;
+
+}
+.header-left{
+  align-items: flex-start;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.nav{
+    height: 60px;
+    display: flex;
+   
+}
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    height: 60px;
+    align-items: center;
+}
+.header-right{
+    align-items: center;
+    justify-content: flex-end;
+  
+  
+  }
+
+  .header-right a {
+      margin-left: 6px;
+      margin-right: 0px;
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .header-right .btn{
+      background-color: #f2f2f2;
+      color: black;
+      padding: 8px;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  .content{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex: 4;
+}
+.nome{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.banner {
+    height: 100vh;
+    background-image: url(/img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#sobre {
+    height: 100vh;
+    background-image: url(/img/sobre.jpg);
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+   display: flex;
+   padding: 120px;
+}
+#sobre .left .perfil img {
+    width: 420px;
+    flex: 1;
+
+
+}
+
+.texto{
+    justify-content: space-around;
+    font-size: 25px;
+    flex: 1;
+    padding-right: 0px;
+    padding-left: 95px;
+    text-align: center;
+    align-items: flex-start;
+    text-align: justify;
+
+}
+
+h1{ align-items:baseline;
+    font-size: 75px;
+
+}
+h2{
+  align-items:baseline;
+  font-size: 50px;
+  color: #0072ff;
+
+}
+
+#servicos {
+    height: 100vh;
+    background-image: url(/img/sobre.jpg);
+    background-size: cover;
+    background-position: center;
+    color: aliceblue; 
+    margin: auto;
+    text-align:center;
+  justify-content: space-around;
+    color: white;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    
+}
+#Projetos
+   {height: 100vh;
+    background-image: url(img/sobre.jpg);
+    background-size: cover;
+    background-position: center;
+color: azure;
+text-align:center ;
+font-size: 32px;
+ text-transform: uppercase;
+ padding-top: 200px;
+
+
+}
+
+#Contato
+       {height: 100vh;
+        background-image: url(/img/contato.jpg);
+        background-size: cover;
+        background-position: center;
+       
+       
+    }
+.conteudo{
+margin: auto;
+text-align: left;
+justify-content: space-around;
+color: white;
+font-size: 22px;
+margin-bottom: 130px;
+margin-left: 69px;
+padding-top: 100px;
+letter-spacing: 2px;
+text-transform: uppercase;
+        
+        
+}
+
+
+
+p{
+    
+justify-content:space-around;
+color: white;
+font-size: 22px;
+margin-bottom:29px;
+margin-left: -15px;
+padding-top: 29px;
+letter-spacing: 2px;
+text-transform: uppercase;
+    }
+p{
+padding: 20px;
+align-items: center; 
+box-shadow: inset 1 0 0 0 #0072ff;
+color: white;
+width: 500px;
+transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+  }
+
+p:hover {
+    box-shadow: inset 580px 0 0 0 #0072ff;
+    color: white;
+   
+  }
+
+    
+a {
+
+box-shadow: inset 0 0 0 0 #0072ff;
+color: white;
+transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+            }
+a:hover {
+
+  color: white;
+            }
+/*Home*/      
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+body {
+  background-color: #010;
+}
+
+#title {
+  background-color: black;
+  font-family: "Cairo";
+  text-align: center;
+  color: #54b3d6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 1px;
+  line-height:2
+  
+}
+
+h1 {
+  background-image: url(/img/80qW.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 120px;
+  margin: 10px 0;
+  
+}
+
+
+.white-mode {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: black;
+  border-radius: 3px;
+  color: black;
+  transition: .35s ease-in-out;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font-family: "Montserrat";
+}
+
+.white-mode:hover {
+  background-color: black;
+  color: black;
+}
+
+/*Home*/
+
+/* CSS PROJETOS */
+
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 45%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 80%;
+  background-color: black;
+  counter-increment: item;
+}
+#img-projetos{
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 700px;
+}
+
+.carousel__slide:nth-child(even) {
+  background-color: #99f;
+}
+
+.carousel__slide:before {
+  content: counter(item);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,70px);
+  color: #fff;
+  font-size: 2em;
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__next {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel::before,
+
+
+.carousel::after,
+.carousel__next {
+  right: -1rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-color: #333;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+/* CSS PROJETOS */
+
+/* serviços*/
+  
+.cpanel{
+width:32%;
+display: inline-block;
+background-color:#34495E;
+color:#fff;
+margin-top: 50px;
+}
+.icon-part i{
+font-size: 30px;
+padding:10px;
+border:1px solid #fff;
+border-radius:50%;
+margin-top:-25px;
+margin-bottom: 10px;
+background-color:#34495E;
+}
+.icon-part p{
+margin:0px;
+padding-bottom: 10px;
+}
+.card-content-part{
+background-color: #2F4254;
+padding: 5px 0px;
+}
+.cpanel .card-content-part:hover{
+background-color: #5a5a5a;
+cursor: pointer;
+}
+.card-content-part a{
+color:#fff;
+text-decoration: none;
+}
+.cpanel-green .icon-part,.cpanel-green .icon-part i{
+background-color: #16A085;
+}
+.cpanel-green .card-content-part{
+background-color: #149077;
+}
+.cpanel-orange .icon-part,.cpanel-orange .icon-part i{
+background-color: #F39C12;
+}
+.cpanel-orange .card-content-part{
+background-color: #DA8C10;
+}
+.cpanel-blue .icon-part,.cpanel-blue .icon-part i{
+background-color: #2980B9;
+}
+.cpanel-blue .card-content-part{
+background-color:#2573A6;
+}
+.cpanel-red .icon-part,.cpanel-red .icon-part i{
+background-color:#E74C3C;
+}
+.cpanel-red .card-content-part{
+background-color:#CF4436;
+}
+.cpanel-skyblue .icon-part,.cpanel-skyblue .icon-part i{
+background-color:#8E44AD;
+}
+.cpanel-skyblue .card-content-part{
+background-color:#803D9B;
+}
+
+/*Contato-icons*/
+
+.cont1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+#apple,#twitter,#github,#facebook,#instagram {
+  font-size: 8em;
+  background-color: #18191f;
+  color: #fff;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080;
+  border-radius: 29px;
+  padding: 11px 19px;
+  margin: 0 40px;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+}
+#twitter {
+  animation-delay: 0.1s;
+}
+#instagram{
+  animation-delay: 0.7s;
+
+}
+#facebook {
+  animation-delay: 0.1s;
+}
+#github {
+  animation-delay: 0.7s;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/*Contato-icons*/
+
+

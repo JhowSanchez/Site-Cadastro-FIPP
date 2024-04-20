@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="iso-8859-1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/fipp-logo.png" />
+  <link rel="stylesheet" href="/css/banda4.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-brand">
+      Fipp Music Festival
+    </div>
+    <div class="navbar-buttons">
+      <a onclick="goBack()" id="comprar-ingressos">Home</a>
+    </div>
+  </div>
+  <video poster="/img/raimundos01.jpeg"id="bgvid" playsinline autoplay loop preload="auto">
+    <source src="/videos/Raimundos - Mulher de Fases (Clipe Oficial)(360P).mp4" type="video/webm">
+    <source src="/videos/Raimundos - Mulher de Fases (Clipe Oficial)(360P).mp4" type="video/mp4">
+  </video>
+  <div id="polina">
+    <h1>Raimundos</h1>
+    <p>Genero : ROCK
+    <p>Data 30/03/2023 - Palacio dos Esportes</a>
+    <p>Raimundos é uma banda de rock brasileira que surgiu em Brasília no início dos anos 90. Com uma sonoridade que
+      mistura punk rock, forró e outros ritmos nordestinos, o grupo se tornou um dos mais populares e influentes do
+      país.
+
+      O nome da banda é uma homenagem ao seu primeiro vocalista, Rodolfo Abrantes, que nasceu na cidade de Raimundo
+      Nonato, no Piauí. Já a escolha do estilo musical foi influenciada pelo cenário musical da época, que era dominado
+      pelo rock e pop internacional.
+    </p>
+    <p>Com letras irreverentes e muitas vezes provocativas, os Raimundos se destacaram por sua forma única de abordar
+      temas como sexo, drogas e política. Eles também ficaram conhecidos por suas apresentações ao vivo energéticas e
+      divertidas, que sempre atraíram um grande público.
+      Em resumo, os Raimundos são uma das bandas mais importantes e queridas da história do rock brasileiro. Com sua
+      mistura única de punk rock e ritmos nordestinos, eles criaram um som original e cativante que continua a inspirar
+      novos artistas até os dias de hoje.
+    </p>
+    <button>Pause</button>
+  </div>
+</body>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+  var vid = document.getElementById("bgvid");
+  var pauseButton = document.querySelector("#polina button");
+
+  if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+
+  function vidFade() {
+    vid.classList.add("stopfade");
+  }
+
+  vid.addEventListener('ended', function () {
+    // only functional if "loop" is removed 
+    vid.pause();
+    // to capture IE10
+    vidFade();
+  });
+
+
+  pauseButton.addEventListener("click", function () {
+    vid.classList.toggle("stopfade");
+    if (vid.paused) {
+      vid.play();
+      pauseButton.innerHTML = "Pause";
+    } else {
+      vid.pause();
+      pauseButton.innerHTML = "Paused";
+    }
+  })
+
+
+</script>
+
+</html>

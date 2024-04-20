@@ -1,0 +1,86 @@
+#topo
+{
+    width: 100%;
+    height: 100px;
+    background-color: green;
+}
+
+#menu
+{
+    width: 15%;
+    height: 500px;
+    
+    float: left;
+}
+
+#conteudo
+{
+    width: 85%;
+    height: 500px;
+    float: left;
+    overflow: auto;
+}
+
+#rodape
+{
+    width: 100%;
+    height: 60px;
+    background-color: darkgray;
+    float: left;
+    text-align: center;
+}
+
+.titulo
+{
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    text-shadow: 1px 2px 2px black;
+    color: cyan;
+}
+
+.RA
+{
+    display: inline;
+}
+
+.menu li
+{
+    text-align: center;
+    font-size: large;
+    color: blue;
+    text-shadow: 1px 1px 1px black;
+    background-color: beige;
+    list-style-type: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 2px solid gray;
+    margin-right: 50px;
+}
+
+.conteudo
+{
+    text-align: justify;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+p
+{
+    font-size: 20px;
+}
+
+.img
+{
+    margin: 0 auto;
+    width: 100px;
+}

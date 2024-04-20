@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="iso-8859-1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/fipp-logo.png" />
+  <link rel="stylesheet" href="/css/banda3.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-brand">
+      Fipp Music Festival
+    </div>
+    <div class="navbar-buttons">
+      <a onclick="goBack()" id="comprar-ingressos">Home</a>
+    </div>
+  </div>
+  <video poster="/img/imagine.png" id="bgvid" playsinline autoplay loop preload="auto">
+    <source src="/videos/Imagine Dragons - Thunder(480P).mp4" type="video/mp4">
+    <source src="/videos/Imagine Dragons - Thunder(480P).mp4" type="video/mp4">
+
+  </video>
+  <div id="polina">
+    <h1>Imagine Dragons</h1>
+    <p>Genero : POP ROCK
+    <p>Data 29/03/2023 - Palacio dos Esportes</a>
+    <p>A banda Imagine Dragons é uma das mais populares da atualidade, com um som que mistura rock alternativo, pop e
+      eletrônica. Fundada em Las Vegas em 2008, a banda é composta por Dan Reynolds (vocalista), Wayne Sermon
+      (guitarrista), Ben McKee (baixista) e Daniel Platzman (baterista).
+
+      O primeiro grande sucesso da banda foi a música "It's Time", em 2012, que alcançou o top 20 das paradas americanas
+      e conquistou milhões de fãs em todo o mundo. Desde então, eles lançaram uma série de hits, incluindo
+      "Radioactive", "Demons", "On Top of the World", "Thunder" e "Believer".
+    </p>
+    <p>O som da banda é caracterizado por letras emocionantes e poderosas, combinadas com batidas energéticas e riffs de
+      guitarra memoráveis. Eles também são conhecidos por suas performances enérgicas ao vivo, que incluem efeitos
+      visuais impressionantes e muita interação com o público.
+
+      Além de seu sucesso comercial, a banda também é conhecida por seu ativismo social e seu envolvimento em causas
+      importantes. Eles são defensores da igualdade e da inclusão LGBTQ+, e já fizeram parcerias com várias organizações
+      de caridade para apoiar causas como saúde mental, educação e combate à pobreza.</p>
+    <button>Pause</button>
+  </div>
+</body>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+  var vid = document.getElementById("bgvid");
+  var pauseButton = document.querySelector("#polina button");
+
+  if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+
+  function vidFade() {
+    vid.classList.add("stopfade");
+  }
+
+  vid.addEventListener('ended', function () {
+    // only functional if "loop" is removed 
+    vid.pause();
+    // to capture IE10
+    vidFade();
+  });
+
+
+  pauseButton.addEventListener("click", function () {
+    vid.classList.toggle("stopfade");
+    if (vid.paused) {
+      vid.play();
+      pauseButton.innerHTML = "Pause";
+    } else {
+      vid.pause();
+      pauseButton.innerHTML = "Paused";
+    }
+  })
+
+
+</script>
+
+</html>

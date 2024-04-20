@@ -1,0 +1,145 @@
+*
+{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body
+{
+    overflow: hidden;
+}
+
+.fundo
+{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url(/img/hellbooybgjpg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.cabeçalho
+{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.cabeçalho :hover
+{
+    color: bisque;
+}
+
+.button
+{
+    color: aquamarine;
+    background: transparent;
+    border: solid 1px #2ecc71 ;
+    padding: 5px;
+    font-size: 12px;
+    width: 150px;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: aquamarine;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.conteiner
+{
+    padding: 150px 0 0 130px;
+}
+
+.texto h3
+{
+    color: white;
+    font-size: 20px;
+}
+
+.texto h1
+{
+    color: white;
+    margin-top: 12px;
+}
+
+.texto p
+{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.text
+{
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text::before
+{
+    content:'';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    display: block;
+    border: 1px solid #2ecc71;
+    opacity: 0;
+    transition: 0.5s ;
+}
+
+.ponto
+{
+    list-style: circle;
+    font-size: 20px;
+}
+
+.texto a:hover
+{
+    color: red;
+}
+
+.texto span
+{
+    color: red;
+}
+
+#link-topo
+{
+    text-decoration: none;
+    color: black;
+    background-color: bisque;
+    padding: 10px;
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    box-shadow: 3px 3px 10px #333;
+    border-radius: 30px;
+}

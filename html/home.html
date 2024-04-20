@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="iso-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/fipp-logo.png" />
+    ] <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>FIPP Music</title>
+</head>
+<body>
+     <!-- Barra de navegação -->
+     <div class="navbar">
+        <div class="navbar-brand">
+          Fipp Music Festival
+        </div>
+        <div class="navbar-buttons">
+          <a href="#home" id="comprar-ingressos">Home</a>
+          <a href="#show" id="cadastrar">Shows</a>
+          <a href="#tabela" id="entrar">ingressos</a>
+          <a href="/cadastro" id="ingresso">Cadastro</a>
+          <a href="/portifolios" id="sobre">Sobre</a>
+        </div>
+      </div>      
+      <div id="home" class="background">
+        <div class="cont">
+          <h1>FIPP Music Festival</h1>
+          <p>O FIPP Music Festival é um evento anual que reúne os melhores artistas nacionais e internacionais em um ambiente descontraído e vibrante. Com um line-up diverso que abrange vários gêneros musicais, o festival é uma celebração da música e da cultura.</p>
+          <p>Os palcos do FIPP são conhecidos por terem uma energia única, criando uma atmosfera eletrizante que deixa o público querendo mais. Além da música, o festival oferece uma variedade de opções gastronômicas e áreas de descanso para os participantes relaxarem entre os shows.</p>
+          <p>Se você é fã de música e quer viver uma experiência inesquecível, o FIPP Music Festival é o lugar certo para estar. Junte-se a nós para celebrar a música e curtir uma festa sem igual!</p>
+        </div>
+      </div>
+      <h1 id="show" class="SHOWS">Shows Confirmados</h1>
+      <section  class="hero-section">
+        <div class="card-grid">
+          <a class="card" href="/banda1">
+            <div class="card__background" style="background-image: url(/img/e49e6064d0c8bfcac711139b05354bfd.jpg)"></div>
+            <div class="card__content">
+              <p class="card__category">ROCK</p>
+              <h3 class="card__heading">Three Days Grace</h3>
+            </div>
+          </a>
+          <a class="card" href="/banda2">
+            <div class="card__background" style="background-image: url(/img/artworks-njrn1mle9DF1qBMA-7g9YOQ-t500x500.jpg)"></div>
+            <div class="card__content">
+              <p class="card__category">RAP</p>
+              <h3 class="card__heading">Kayblack</h3>
+            </div>
+          </a>
+          <a class="card" href="/banda3">
+            <div class="card__background" style="background-image: url(/img/imagine.png)"></div>
+            <div class="card__content">
+              <p class="card__category">POP ROCK</p>
+              <h3 class="card__heading">Imagine Dragons</h3>
+            </div>
+          </li>
+          <a class="card" href="/banda4">
+            <div class="card__background" style="background-image: url(/img/raimundos01.jpeg)"></div>
+            <div class="card__content">
+              <p class="card__category">ROCK</p>
+              <h3 class="card__heading">Raimundos</h3>
+            </div>
+          </a>
+        <div>
+      </section>
+      <table id="tabela">
+        <tr>
+          <th>Data</th>
+          <th>Local</th>
+          <th>Evento</th>
+          <th>Aluno</th>
+          <th>Professor</th>
+          <th>Não Aluno</th>
+        </tr>
+        <tr>
+          <td>27/03/2023</td>
+          <td>Palacio dos esportes</td>
+          <td>Three Days Grace</td>
+          <td>R$ 15,00</td>
+          <td>R$ 20,00</td>
+          <td>R$ 25,00</td>
+        </tr>
+        <tr>
+          <td>28/03/2023</td>
+          <td>Palacio dos esportes</td>
+          <td>Kayblack Freestyle</td>
+          <td>R$ 15,00</td>
+          <td>R$ 20,00</td>
+          <td>R$ 25,00</td>
+        </tr>
+        <tr>
+          <td>29/03/2023</td>
+          <td>Palacio dos esportes</td>
+          <td>Imagine Dragons</td>
+          <td>R$ 15,00</td>
+          <td>R$ 20,00</td>
+          <td>R$ 25,00</td>
+        </tr>
+        <tr>
+          <td>30/03/2023</td>
+          <td>Palacio dos esportes</td>
+          <td>Raimundos</td>
+          <td>R$ 15,00</td>
+          <td>R$ 20,00</td>
+          <td>R$ 25,00</td>
+        </tr>
+        <tr>
+          <td id="line" colspan="6">
+            Ingressos a venda na Atlética FIPP 
+          </td>
+        </tr>
+      </table>
+      <footer>
+        <div class="social-media">
+          <a href="https://www.instagram.com/fipp_music/" target="_blank">
+            <img src="img/inst.jpg" alt="Instagram">
+          </a>
+          <span>FIPP Music</span>
+          <a href="https://wa.me/XXXXXXXXXXX" target="_blank">
+            <img src="img/what.png" alt="WhatsApp">
+          </a>
+        </div>
+      </footer>
+</body>
+<script>
+var cards, nCards, cover, openContent, openContentText, pageIsOpen = false,
+    openContentImage, closeContent, windowWidth, windowHeight, currentCard;
+
+init();
+
+function init() {
+  resize();
+  selectElements();
+  attachListeners();
+}
+
+function selectElements() {
+  cards = document.getElementsByClassName('card'),
+  nCards = cards.length,
+  cover = document.getElementById('cover'),
+  openContent = document.getElementById('open-content'),
+  openContentText = document.getElementById('open-content-text'),
+  openContentImage = document.getElementById('open-content-image')
+  closeContent = document.getElementById('close-content');
+}
+function attachListeners() {
+  for (var i = 0; i < nCards; i++) {
+    attachListenerToCard(i);
+  }
+  closeContent.addEventListener('click', onCloseClick);
+  window.addEventListener('resize', resize);
+}
+
+function attachListenerToCard(i) {
+  cards[i].addEventListener('click', function(e) {
+    var card = getCardElement(e.target);
+    onCardClick(card, i);
+  })
+}
+
+function onCardClick(card, i) {
+  currentCard = card;
+  currentCard.className += ' clicked';
+  setTimeout(function() {animateCoverUp(currentCard)}, 500);
+  animateOtherCards(currentCard, true);
+  openContent.className += ' open';
+}
+
+function animateCoverUp(card) {  var cardPosition = card.getBoundingClientRect();
+
+  var cardStyle = getComputedStyle(card);
+  setCoverPosition(cardPosition);
+  setCoverColor(cardStyle);
+  scaleCoverToFillWindow(cardPosition);
+  openContentText.innerHTML = '<h1>'+card.children[2].textContent+'</h1>'+paragraphText;
+  openContentImage.src = card.children[1].src;
+  setTimeout(function() {
+    window.scroll(0, 0);
+    pageIsOpen = true;
+  }, 300);
+}
+
+function animateCoverBack(card) {
+  var cardPosition = card.getBoundingClientRect();
+  setCoverPosition(cardPosition);
+  scaleCoverToFillWindow(cardPosition);
+  cover.style.transform = 'scaleX('+1+') scaleY('+1+') translate3d('+(0)+'px, '+(0)+'px, 0px)';
+  setTimeout(function() {
+    openContentText.innerHTML = '';
+    openContentImage.src = '';
+    cover.style.width = '0px';
+    cover.style.height = '0px';
+    pageIsOpen = false;
+    currentCard.className = currentCard.className.replace(' clicked', '');
+  }, 301);
+}
+
+function setCoverPosition(cardPosition) {
+  cover.style.left = cardPosition.left + 'px';
+  cover.style.top = cardPosition.top + 'px';
+  cover.style.width = cardPosition.width + 'px';
+  cover.style.height = cardPosition.height + 'px';
+}
+
+function setCoverColor(cardStyle) {
+  cover.style.backgroundColor = cardStyle.backgroundColor;
+}
+
+function scaleCoverToFillWindow(cardPosition) {
+  var scaleX = windowWidth / cardPosition.width;
+  var scaleY = windowHeight / cardPosition.height;
+  var offsetX = (windowWidth / 2 - cardPosition.width / 2 - cardPosition.left) / scaleX;
+  var offsetY = (windowHeight / 2 - cardPosition.height / 2 - cardPosition.top) / scaleY;
+  cover.style.transform = 'scaleX('+scaleX+') scaleY('+scaleY+') translate3d('+(offsetX)+'px, '+(offsetY)+'px, 0px)';
+}
+
+function onCloseClick() {
+  openContent.className = openContent.className.replace(' open', '');
+  animateCoverBack(currentCard);
+  animateOtherCards(currentCard, false);
+}
+
+function animateOtherCards(card, out) {
+  var delay = 100;
+  for (var i = 0; i < nCards; i++) {
+    if (cards[i] === card) continue;
+    if (out) animateOutCard(cards[i], delay);
+    else animateInCard(cards[i], delay);
+    delay += 100;
+  }
+}
+
+function animateOutCard(card, delay) {
+  setTimeout(function() {
+    card.className += ' out';
+   }, delay);
+}
+
+function animateInCard(card, delay) {
+  setTimeout(function() {
+    card.className = card.className.replace(' out', '');
+  }, delay);
+}
+
+function getCardElement(el) {
+  if (el.className.indexOf('card ') > -1) return el;
+  else return getCardElement(el.parentElement);
+}
+
+function resize() {
+  if (pageIsOpen) {
+    var cardPosition = currentCard.getBoundingClientRect();
+    setCoverPosition(cardPosition);
+    scaleCoverToFillWindow(cardPosition);
+  }
+  windowWidth = window.innerWidth;
+  windowHeight = window.innerHeight;
+}
+
+var paragraphText = '<p>Somebody once told me the world is gonna roll me. I ain\'t the sharpest tool in the shed. She was looking kind of dumb with her finger and her thumb in the shape of an "L" on her forehead. Well the years start coming and they don\'t stop coming. Fed to the rules and I hit the ground running. Didn\'t make sense not to live for fun. Your brain gets smart but your head gets dumb. So much to do, so much to see. So what\'s wrong with taking the back streets? You\'ll never know if you don\'t go. You\'ll never shine if you don\'t glow.</p><p>Hey now, you\'re an all-star, get your game on, go play. Hey now, you\'re a rock star, get the show on, get paid. And all that glitters is gold. Only shooting stars break the mold.</p><p>It\'s a cool place and they say it gets colder. You\'re bundled up now, wait till you get older. But the meteor men beg to differ. Judging by the hole in the satellite picture. The ice we skate is getting pretty thin. The water\'s getting warm so you might as well swim. My world\'s on fire, how about yours? That\'s the way I like it and I never get bored.</p>';
+</script>
+</html>

@@ -1,0 +1,121 @@
+
+body{
+    padding-top: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+  
+
+  
+}
+ body , img{
+    background-image: url(/img/be1fa11179b527f82eed71328b1d06fd.jpg);
+    background-size: cover;
+    background-position: left;
+}
+#titulo{
+    font-size: 30px;
+    text-align: center;
+    width: 380px;
+    height: 90%;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    background-color: crimson;
+    border-radius: 12px;
+}
+
+#sortear{
+    font-size: 25px;
+    text-align: center;
+    width: 380px;
+    height: 90%;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    background-color: cornflowerblue;
+    
+}
+#entre{
+
+    font-size: 25px;
+    text-align: center;
+    width: 500px;
+    height: 90%;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    background-color: cornflowerblue;
+    text-transform: uppercase;
+    justify-content: space-around;
+    display: flex;
+    flex: 2;
+
+}
+#button{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button  button{
+    width: 90%;
+    height: 70%;
+    border: 0;
+    outline: 0;
+    background-color: crimson;
+    font-size: 18px;
+    font-weight: 800;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.numero{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    background-color: cornflowerblue;
+    text-align: center;
+   
+}
+
+.numerorevel{
+
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    background-color: cornflowerblue;
+    text-align: center;
+    color:cornflowerblue ;
+   
+}
+
+
+#numeros{
+flex: 2;
+display: flex;
+flex-wrap: wrap;
+align-items: baseline;
+
+
+}
+
